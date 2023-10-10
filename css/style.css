@@ -497,8 +497,35 @@ span{
     html {
         font-size: 50%;
     }
+.about-content {
+        margin-top: -13rem;
+    }
+    
+    .about-img img {
+        width: 75vw;
+    }
+    
+    .about-img {
+        margin-left: 0rem;
+        margin-right: 7rem;
+    }
 
     /* Add more specific styles as needed */
+}
+
+@media (max-width: 390px){
+.about-content {
+    margin-top: -13rem;
+}
+
+.about-img img {
+    width: 75vw;
+}
+
+.about-img {
+    margin-left: 0rem;
+    margin-right: 7rem;
+}
 }
 
 /* Media Query for Screens Smaller than or Equal to 360px (e.g., very small smartphones) */
