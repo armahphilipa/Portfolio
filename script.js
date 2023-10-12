@@ -455,3 +455,22 @@ document.addEventListener('DOMContentLoaded', function () {
         delay: 200
     });
 });
+
+
+//clear email post-content after sending
+
+document.addEventListener("DOMContentLoaded", function () {
+    const contactForm = document.querySelector(".contact form");
+
+    contactForm.addEventListener("submit", function (event) {
+        event.preventDefault(); // Prevent the default form submission
+
+        // Clear input fields
+        const inputFields = contactForm.querySelectorAll("input");
+        const textareaField = contactForm.querySelector("textarea");
+        inputFields.forEach((input) => {
+            input.value = "";
+        });
+        textareaField.value = "";
+    });
+});
